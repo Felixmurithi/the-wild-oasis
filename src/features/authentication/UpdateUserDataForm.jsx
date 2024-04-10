@@ -19,7 +19,7 @@ function UpdateUserDataForm() {
     },
   } = useUser();
 
-  console.log(currentFullName);
+  console.log(email, currentFullName);
 
   const [fullName, setFullName] = useState(currentFullName);
   const [avatar, setAvatar] = useState(null);
