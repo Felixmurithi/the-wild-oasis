@@ -5,7 +5,7 @@ form hooks to
 
 ## REACT_QUERY
 
-what react query does is to enable the handling the of remote state that is fetched from some server, react query is able to handle the fetching of this data- keep it in sync, through state time and invalidate queries after some time keeping it, allows for actions to be called after sucess or error of submiting the mutation action, this can alsow be done more than once check useXreateCabin and Creaedit Cabin fom to see example
+what react query does is to enable the handling the of remote state that is fetched from some server, react query is able to handle the fetching of this data- keep it in sync, through state time and invalidate queries after some time keeping it, allows for actions to be called after sucess or error of submiting the mutation action, this can alsow be done more than once check useCreateCabin and Creaedit Cabin fom to see example
 
 ### setting up react query
 
