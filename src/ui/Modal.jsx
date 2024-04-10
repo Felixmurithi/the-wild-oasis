@@ -2,8 +2,8 @@ import { cloneElement, createContext, useContext, useState } from "react";
 import styled from "styled-components";
 import { HiXMark } from "react-icons/hi2";
 import { createPortal } from "react-dom";
+import useClickOutside from "../hooks/useClickOutside.js";
 
-import UseClickOutside from "../hooks/useClickOutside";
 const StyledModal = styled.div`
   position: fixed;
   top: 50%;
@@ -88,7 +88,7 @@ function Window({ children, name }) {
   // receives children, and opens prop, adds onClick => open(recived opens) to the children using the cloneElement- displays children
   const { openName, close } = useContext(ModalContext);
 
-  const ref = UseClickOutside(close);
+  const ref = useClickOutside(close);
   if (name !== openName) return null;
   return createPortal(
     <Overlay>

@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 import { createPortal } from "react-dom";
 import { HiEllipsisVertical } from "react-icons/hi2";
 import styled from "styled-components";
-import UseClickOutside from "../hooks/useClickOutside";
+import useClickOutside from "../hooks/useClickOutside.js";
 
 const Menu = styled.div`
   display: flex;
@@ -116,7 +116,7 @@ function List({ id, children }) {
 
   const { openId, position, close } = useContext(MenusContext);
 
-  const ref = UseClickOutside(close, false);
+  const ref = useClickOutside(close, false);
 
   // what this does is once u click to another row it closes the current one- that only
   if (openId !== id) return null;
